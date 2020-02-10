@@ -26,7 +26,7 @@
     os.path.isfile('static/js.js') judge if file
     os.path.isdir('static/jquery/js') judge if folder
     os.path.isabs() judge if path abs
-    os.path.exists() judge if path exists
+    os.path.exists() judge if path/file exists
     os.path.split() split path and filename
     os.path.splitext() get file.ext
     os.path.dirname() get path
