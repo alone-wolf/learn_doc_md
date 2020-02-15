@@ -8,3 +8,11 @@
     git config --global --unset http.proxy
 
     git config --global --unset https.proxy
+
+### set username useremail
+
+    git config --global user.name "name"
+    git config --global user.email "xx@XXX.com"
+
+    git config user.name
+    git config user.email

@@ -1,0 +1,1 @@
+    ln -s /home/node-xx/lib/node_modules/hexo-cli/bin/hexo /usr/local/bin/hexo
