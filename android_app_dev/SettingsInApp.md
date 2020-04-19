@@ -52,3 +52,66 @@ class MySettingsFragment : PreferenceFragmentCompat() {
 }
 ```
 
+### 0x03 部件
+
+1. PreferenceCategory
+
+   * 一个组，用来包含多个preference
+   * title 这个组的标题
+
+2. Preference
+
+   * 一个啥也没有的项，貌似是其他几个的父类
+   * key 相当于btn的id，用于定位
+   * title 显示的标题
+   * summary 标题下面的简单显示
+   * icon 不用说
+
+3. CheckPreference
+
+   * 只是有个勾选框
+
+4. SwitchPreference
+
+5. DropDownPreference
+
+   * entries 下拉菜单的选项
+
+   * entryValues 下拉菜单的值
+
+   * 下面这个放在string.xml文件里resource标签内，和string标签同级
+
+   * ```xml
+     <string-array
+       name="string_array_name">
+       <item>text_string</item>
+     </string-array>
+     ```
+
+6. SeekBarPreference
+   * defaultValue 默认值
+   * max 最大值
+7. ListPreference
+8. MultiSelectListPerference
+
+### 0x04 获取值
+
+java
+
+```java
+SharedPreferences sharedPreferences =
+   PreferenceManager.getDefaultSharedPreferences(this);
+		//Activity context
+String name = sharedPreferences.getString(“key”, "");
+```
+
+kotlin
+
+```kotlin
+val sharedPreferences = PreferenceManager
+	.getDefaultSharedPreferences(this /* Activity context */)
+val name = sharedPreferences.getString("signature", "")
+```
+
+### 0x05 设置值
+

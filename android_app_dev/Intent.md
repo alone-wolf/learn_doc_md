@@ -22,3 +22,18 @@ intent.setClassName("com.tencent.mtt","com.tencent.mtt.MainActivity");//打开QQ
 startActivity(intent);
 ```
 
+### 启动Activity/Service
+
+kotlin
+
+```kotlin
+val intent = Intent(context,RecvActivity::class.java)
+startActivity(intent)
+```
+
+```kotlin
+val intent = Intent(context,RecvActivity::class.java)
+intent.putExtra("text","value")
+startActivity(intent)
+```
+

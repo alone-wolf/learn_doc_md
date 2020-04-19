@@ -1,4 +1,4 @@
-# 使用代码构建UI界面
+# Android 使用代码构建UI界面
 
 ### 0x00
 
@@ -30,7 +30,31 @@
 
 将各种view添加到layout后，直接return该layout
 
-### 0x03 java/kotlin都是类似
+### 0x04 TextView Button 等设置属性
+
+java
+
+```java
+Button btn = new Button(context);
+btn.setText("this is a btn");
+btn.setTextSize(20); //float
+btn.setOnClickListener(new View.OnClickListener(){
+  @Override
+  public void onClick(View v){
+    // thhings
+  }
+});
+
+// new 的控件 使用如下方法设置layout属性
+LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+layoutParams.setMargins(10,10,10,10);//4个参数按顺序分别是左上右下
+textview.setLayoutParams(layoutParams);
+
+// xml中已经存在的
+LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) textview.getLayoutParams();
+lp.leftMargin = 0;
+textview.setLayoutParams(lp);
+```
 
 to be contioue
 
