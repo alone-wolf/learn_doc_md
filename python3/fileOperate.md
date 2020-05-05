@@ -5,12 +5,12 @@
     os.system() run shell commander
     os.exit() exit current process
     os.popen() run cmd return result in filefd with r
-
+    
     os.getenv() get environment
     os.putenv() put environment
     os.linesep  win: '\r\n' linux:'\n' mac:'\r'
     os.name  win:'nt' linux/unix:'posix'
-
+    
     os.rename(old, new) rename
     os.listdir() get all names of files and folder
     os.mkdir() create one folder
@@ -19,7 +19,8 @@
     os.removedirs() like shell rmdir -p x/y/z to del folders
     os.mknod('test.txt') create a blank file
 
-    
+
+​    
 
     os.stat('static/js/js.js') get file attr
     os.chmod(path,mode)  BIANTAI
@@ -32,10 +33,11 @@
     os.path.dirname() get path
     os.path.basename() get filename
     os.path.getsize() get size of file
-
+    
     filefd = open('file',M)  M:
 
-    
+
+​    
 
 | Character |                         Meaning                         |
 |:---------:|:-------------------------------------------------------:|
