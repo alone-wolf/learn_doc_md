@@ -10,7 +10,7 @@
             }else{
                 //sys app
             }
-
+    
             //get packagename
             String packageName = pInfo.packageName;
             
@@ -19,7 +19,7 @@
             
             //get icon
             Drawable icon = appInfo.loadIcon(pm);
-
+    
             String appName = appInfo.loadLable(pm).toString();
         }
     }
