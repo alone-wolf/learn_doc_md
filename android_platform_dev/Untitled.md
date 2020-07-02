@@ -11,3 +11,5 @@ sudo apt install libncurses5
 
 make clobber 清除顶层目录下的out/
 make clean 清除out/target/product/[product_name]
+
+增加一个使用ccache的教程
