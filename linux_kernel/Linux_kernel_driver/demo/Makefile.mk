@@ -1,5 +1,6 @@
 
 KERNDIR:= /lib/modules/3.2.0-29-generic-pae/build/
+KERNDIR:= /lib/modules/5.4.0-39-generic/build/
 PWD:=$(shell pwd)
 
 obj-m:=demo.o

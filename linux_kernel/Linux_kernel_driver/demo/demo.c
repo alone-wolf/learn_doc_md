@@ -10,6 +10,6 @@ void __exit demo_exit(void){
     printk("---%s---%s---%d---\n",__FILE__,__func__,__LINE__);
 }
 
-module_init(demo_init)
-module_exit(demo_exit)
+module_init(demo_init);
+module_exit(demo_exit);
 MODULE_LICENSE("GPL");
